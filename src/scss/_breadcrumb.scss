@@ -1,0 +1,43 @@
+/* 04 - breadcrumb - start
+==================================================================================================== */
+.breadcrumb_section {}
+
+.page_title_area {
+	min-height: 185px;
+	padding: 50px 0px;
+	.overlay {
+		background-color: rgba(255,255,255,0.04) !important;
+	}
+}
+
+.page_title {
+	font-size: 48px;
+}
+
+.breadcrumb_nav {
+	padding: 15px 0px;
+	li {
+		line-height: 1;
+		color: #6E7684;
+		font-size: 15px;
+		position: relative;
+		&:after {
+			content: '/';
+			margin: 0px 8px;
+			display: inline-block;
+		}
+		&:last-child {
+			&:after {
+				display: none;
+			}
+		}
+	}
+	a {
+		color: #6E7684;
+		&:hover {
+			color: $default_red;
+		}
+	}
+}
+/* 04 - breadcrumb - end
+==================================================================================================== */

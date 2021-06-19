@@ -1,0 +1,12 @@
+/* Rating Stars */
+
+input[type="radio"] {
+	display: none;
+}
+
+.star {
+	cursor: pointer;
+	transition: color 200ms;
+}
+
+/* End Rating Stars*/

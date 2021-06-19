@@ -1,0 +1,283 @@
+body {
+    background-color: #1f1b2d !important;
+}
+
+.App {
+    text-align: center;
+}
+
+.dark-bg {
+    background-color: rgba(255, 255, 255, 0.09) !important;
+    color: #fff;
+}
+
+.text-red {
+    color: #EA001E !important;
+}
+
+
+.text-grey {
+    color: #6E7684 !important;
+}
+
+.opacity-70 {
+    opacity: .7 !important;
+}
+
+.white {
+    color: #fff !important;
+}
+
+.filter_sidebar.sidebar_section {
+    background-color: rgb(51 48 64);
+
+}
+
+.top-cars-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 45px;
+}
+
+.card-light {
+    border-color: transparent;
+    background-color: rgba(255, 255, 255, 0.04) !important;
+    color: #fff !important;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+.dropzone {
+    text-align: center;
+    padding: 20px;
+    border: 2px dashed #eeeeee;
+    background-color: #1f1b2d;
+    color: #bdbdbd;
+    margin-bottom: 20px;
+}
+
+.dropzone span {
+    font-size: 2rem;
+    color: #777;
+}
+
+.dropzone .remove-preview {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 21px;
+    cursor: pointer;
+    z-index: 2;
+    color: #EA001E;
+}
+
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    width: 35px;
+    height: 35px;
+}
+
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    margin: 8px;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: #fff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.profile-recommendations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.profile-recommendations .profile-recommendation img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.profile-recommendations .profile-recommendation a {
+    font-size: 1.6rem;
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.c-p {
+    cursor: pointer;
+}
+
+.disabled {
+    opacity: 0.5;
+    user-select: none !important;
+    pointer-events: none !important;
+}
+
+.input-range__slider {
+    height: 1.25rem !important;
+    width: 1.25rem !important;
+    margin-top: -0.9rem !important;
+    background: #EA001E !important;
+    border: 1px solid #EA001E !important;
+}
+
+.input-range__track--active {
+    background: #EA001E !important;
+}
+
+.rdtPicker td.rdtOld, .rdtPicker td.rdtNew {
+    color: initial !important;
+}
+
+.rdtPicker td.rdtDisabled, .rdtPicker td.rdtDisabled:hover {
+    color: #999 !important;
+}
+
+.rdtPicker td, .rdtPicker th {
+    font-size: 16px !important;
+}
+
+.rdtPicker td.rdtActive, .rdtPicker td.rdtActive:hover {
+    background-color: #EA001E !important;
+}
+
+.input-range__track {
+    height: 0.6rem !important;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+footer {
+    background-color: rgb(242, 242, 242) !important;
+}
+
+.car_choose_carousel .thumbnail_carousel_nav .item > img {
+    object-fit: cover !important;
+    height: 155px !important;
+}
+
+.react-autosuggest__container {
+    position: relative;
+}
+
+.react-autosuggest__input {
+    width: 240px;
+    height: 30px;
+    padding: 10px 20px;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+.react-autosuggest__input--focused {
+    outline: none;
+}
+
+.react-autosuggest__input--open {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.react-autosuggest__suggestions-container {
+    display: none;
+}
+
+.react-autosuggest__suggestions-container--open {
+    display: block;
+    position: absolute;
+    top: 51px;
+    width: 280px;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    font-family: Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    z-index: 2;
+}
+
+.react-autosuggest__suggestions-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.react-autosuggest__suggestion {
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.react-autosuggest__suggestion--highlighted {
+    background-color: #ddd;
+}
+
+.car-perks-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 160px;
+}
+
+.car-perks-list .checkbox_input {
+    margin-bottom: 20px;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
