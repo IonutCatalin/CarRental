@@ -144,7 +144,7 @@ const ProfileRecommendations = () => {
                         })}
                     </div>
                     :
-                    <div className="text-white">No recommendations. Please make a reservation first.</div>
+                    <div className="text-white">No recommendations available.</div>
                 }
             </div>
         </>

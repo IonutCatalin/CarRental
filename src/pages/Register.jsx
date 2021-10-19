@@ -16,13 +16,15 @@ const Register = () => {
 
         const {name, email, password, confirmPassword, type, phone, address} = credentials;
 
-        if (!name || !email || !password || !confirmPassword || !type || !phone || !address) {
-            return setError("Please fill all required fields.");
-        }
 
         if (password !== confirmPassword) {
             return setError("Passwords do not match.");
         }
+
+        if (!name || !email || !password || !confirmPassword || !phone || !address) {
+            return setError("Please fill all required fields.");
+        }
+
 
         try {
             setError("");

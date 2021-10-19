@@ -56,7 +56,7 @@ const Header = () => {
                                             <ul className="ul_li_block clearfix">
                                                 <li><Link to="/profile"><i className="fal fa-user-circle"></i> Profile</Link></li>
 												{currentUser.type === 1 && <li><Link to="/manage"><i className="fas fa-unlock-alt"></i> Manage</Link></li>}
-                                                <li onClick={() => firebase.auth().signOut()}><Link to="#"><i className="fal fa-sign-out"></i> Logout</Link></li>
+                                                {/* <li onClick={() => firebase.auth().signOut()}><Link to="#"><i className="fal fa-sign-out"></i> Logout</Link></li> */}
                                             </ul>
                                         </div>
                                     </li>

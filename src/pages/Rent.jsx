@@ -38,10 +38,6 @@ const Rent = () => {
         const now = startDate.startOf('day');
         const dates = [];
 
-        // if (now.isSame(endDate.startOf('day'), 'day')) {
-        //     return [new Date(now)];
-        // }
-
         while (now.isBefore(endDate.startOf('day'))) {
             dates.push(new Date(now));
             now.add(1, 'days');
@@ -95,14 +91,10 @@ const Rent = () => {
         const willBeDisabledInitially = filterUniqueDates([
             ...rangeBeforeCheckIn,
             ...disabledCheckInDates,
-            // value,
+            
         ]);
 
-        // setDisabledCheckOutDates(filterUniqueDates([
-        //     ...rangeBeforeCheckIn,
-        //     ...disabledCheckInDates,
-        //     // value,
-        // ]));
+        
 
         const foundFirstDateAfterCheckIn = disabledCheckInDates.find(
             (date) => new Date(date).getTime() > new Date(value).getTime()
@@ -113,11 +105,6 @@ const Rent = () => {
                 moment(foundFirstDateAfterCheckIn),
                 moment(maxDate)
             );
-
-            // setDisabledCheckOutDates(filterUniqueDates([
-            //     ...disabledCheckOutDates,
-            //     ...disabledRange,
-            // ]));
 
             willBeDisabledAfterCheckIn = filterUniqueDates([
                 ...willBeDisabledInitially,
